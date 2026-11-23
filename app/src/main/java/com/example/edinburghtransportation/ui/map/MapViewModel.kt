@@ -45,7 +45,7 @@ class MapViewModel @Inject constructor(
                     e.printStackTrace()
                 }
 
-                kotlinx.coroutines.delay(5000)
+                kotlinx.coroutines.delay(3000)
             }
         }
     }

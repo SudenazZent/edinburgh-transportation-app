@@ -1,0 +1,271 @@
+<resources>
+
+    <string name="app_name">Edinburgh Transportation</string>
+
+
+    <!-- ==================== Alt Menü ==================== -->
+    <string name="home">Home</string>
+    <string name="routes">Routes</string>
+    <string name="map">Map</string>
+    <string name="my_cards">My Cards</string>
+    <string name="settings">Settings</string>
+
+
+    <!-- ==================== Genel ==================== -->
+    <string name="back">Back</string>
+    <string name="loading">Loading...</string>
+    <string name="or">or</string>
+    <string name="try_again">Try Again</string>
+    <string name="start">Start</string>
+    <string name="finish">End</string>
+
+
+    <!-- ==================== Dil ==================== -->
+    <string name="language">Language</string>
+    <string name="app_language">App Language</string>
+    <string name="app_language_description">Select the language you want to use in the app.</string>
+    <string name="selected_language_description">The selected language will be used throughout the app.</string>
+    <string name="turkish">Turkish</string>
+    <string name="english">English</string>
+
+
+    <!-- ==================== Hesap ==================== -->
+    <string name="account">Account</string>
+    <string name="account_info">Account Information</string>
+    <string name="account_info_description">View your account information</string>
+
+    <string name="account_details">Account Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="name_not_found">Name information not found</string>
+    <string name="email_not_found">Email information not found</string>
+
+
+    <!-- ==================== Uygulama Ayarları ==================== -->
+    <string name="app_settings">App Settings</string>
+    <string name="language_description">Change the app language</string>
+
+    <string name="theme">Theme</string>
+    <string name="theme_description">Choose light or dark theme</string>
+
+
+    <!-- ==================== Yardım ==================== -->
+    <string name="help">Help</string>
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="faq_description">Frequently asked questions about the app</string>
+
+    <!-- FAQ -->
+    <string name="faq_title">Frequently Asked Questions</string>
+
+    <string name="faq_login_question">How can I log in?</string>
+    <string name="faq_login_answer">You can log in with your email address and password. If you don\'t have an account, you can register.</string>
+
+    <string name="faq_add_card_question">How can I add my card?</string>
+    <string name="faq_add_card_answer">You can scan your card with NFC or add your card manually from the My Cards section.</string>
+
+    <string name="faq_top_up_question">How can I top up my card?</string>
+    <string name="faq_top_up_answer">You can select your card in the My Cards section and access the balance top-up screen.</string>
+
+    <string name="faq_routes_question">How can I view the routes?</string>
+    <string name="faq_routes_answer">You can view bus and tram routes from the Routes section in the bottom menu.</string>
+
+    <string name="faq_stops_question">How can I view the stops?</string>
+    <string name="faq_stops_answer">You can view stops in Edinburgh and get information about them from the Map section.</string>
+
+    <string name="faq_journey_question">How can I plan a journey?</string>
+    <string name="faq_journey_answer">You can select the Plan Journey option on the Home screen, choose your departure and destination stops, and search for a suitable journey.</string>
+
+    <string name="faq_notifications_question">Where can I see my notifications?</string>
+    <string name="faq_notifications_answer">You can view your notifications by tapping the notification icon in the top-right corner of the Home screen.</string>
+
+    <string name="faq_share_question">How can I share the app?</string>
+    <string name="faq_share_answer">You can share the app using the Share App option in the Settings section.</string>
+
+    <string name="faq_close_answer">Close answer</string>
+    <string name="faq_open_answer">Open answer</string>
+
+
+    <!-- ==================== Ana Sayfa ==================== -->
+    <string name="hello">Hello,</string>
+    <string name="user_default">User</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="all_see">See All</string>
+    <string name="no_cards">You don\'t have any cards yet.</string>
+    <string name="add_card_instruction">Go to My Cards to add a card.</string>
+
+    <string name="edinburgh">EDINBURGH</string>
+    <string name="edinburgh_transport_card">EDINBURGH TRANSPORT CARD</string>
+    <string name="current_balance">Current Balance</string>
+
+    <string name="quick_access">Quick Access</string>
+    <string name="plan_journey">Plan Journey</string>
+    <string name="stop">Stops</string>
+
+
+    <!-- ==================== Paylaş ==================== -->
+    <string name="share_app">Share App</string>
+    <string name="share_app_description">Share Edinburgh Transportation app</string>
+    <string name="share_app_title">Share app</string>
+    <string name="share_app_text">Try the Edinburgh Transportation app!</string>
+
+
+    <!-- ==================== Hatlar ==================== -->
+    <string name="route_search_hint">Search route (e.g. 12A)</string>
+
+    <string name="all">All</string>
+    <string name="bus">Bus</string>
+    <string name="tram">Tram</string>
+    <string name="other">Other</string>
+
+    <string name="route_detail">Route Details</string>
+    <string name="route_info_loading">Loading route information...</string>
+
+    <string name="upcoming_departures">Upcoming Departures</string>
+    <string name="departures_loading">Loading departures...</string>
+    <string name="no_upcoming_departures">There are no upcoming departures at the moment.</string>
+
+    <!-- ==================== Journey Planning ==================== -->
+    <string name="journey_planner">Plan Journey</string>
+    <string name="from">From?</string>
+    <string name="to">To?</string>
+    <string name="starting_point">Starting point</string>
+    <string name="destination_point">Destination</string>
+    <string name="searching">Searching...</string>
+    <string name="find_journey">Find Journey</string>
+    <string name="journey_results">Journey Results</string>
+    <string name="journey_searching">Searching for a journey...</string>
+    <string name="no_journey_yet">No journey has been searched yet or no suitable route was found.</string>
+    <string name="select_starting_point">Select starting point</string>
+    <string name="select_destination_point">Select destination</string>
+    <string name="select_options">Options</string>
+    <string name="next_departure">Next departure</string>
+    <string name="departure_info_not_found">Departure information not found</string>
+    <string name="no_transfer">Transfer: None</string>
+    <string name="transfer">Transfer: %1$s</string>
+    <string name="route_format">Route %1$s</string>
+    <string name="tram_format">Tram %1$s</string>
+
+    <!-- ==================== Duraklar ==================== -->
+    <string name="stops">Stops</string>
+    <string name="stops_description">View available transportation stops.</string>
+    <string name="stop_id">Stop ID: %1$s</string>
+    <string name="unknown_stop">Unknown Stop</string>
+
+
+    <!-- ==================== Splash ==================== -->
+    <string name="splash_title">Edinburgh\nTransportation</string>
+    <string name="splash_description">Manage public transportation easily.</string>
+
+
+    <!-- ==================== Bildirimler ==================== -->
+    <string name="no_notifications">You don\'t have any notifications yet.</string>
+
+
+    <!-- ==================== Giriş ==================== -->
+    <string name="login">Login</string>
+    <string name="welcome">Welcome!</string>
+    <string name="login_description">Log in to continue.</string>
+
+    <string name="email_hint">Your email address</string>
+
+    <string name="password">Password</string>
+    <string name="password_hint">Your password</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="fill_all_fields">Please fill in all fields</string>
+    <string name="login_success">Login successful!</string>
+    <string name="login_failed">Incorrect email or password.</string>
+
+    <string name="login_button">Log In</string>
+
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="register">Register</string>
+
+
+    <!-- ==================== Kayıt ==================== -->
+    <string name="create_account">Create Account</string>
+    <string name="register_description">Create an account to start your journey</string>
+
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="account_created">Your account has been created successfully!</string>
+    <string name="profile_update_failed">Profile could not be updated</string>
+    <string name="registration_failed">Registration failed</string>
+
+    <string name="already_have_account">Already have an account? Log In</string>
+
+
+    <!-- ==================== Kartlar ==================== -->
+    <string name="cards_description">Manage all your transportation cards in one place.</string>
+    <string name="add_card">Add Card</string>
+    <string name="no_cards_added">You don\'t have any cards added yet.</string>
+
+    <string name="edinburgh_transport_card_name">Edinburgh Transport Card</string>
+    <string name="edinburgh_travel_card">Edinburgh Travel Card</string>
+    <string name="edinburgh_city_pass">Edinburgh City Pass</string>
+
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="add_to_favorites">Add to favorites</string>
+
+    <string name="balance">Balance</string>
+    <string name="favorite">★ Favorite</string>
+
+
+    <!-- ==================== Kart Detayı ==================== -->
+    <string name="card_detail">Card Details</string>
+    <string name="card_not_found">Card not found</string>
+
+    <string name="edinburgh_transport_card_title">EDINBURGH\nTRANSPORT CARD</string>
+
+    <string name="recent_transactions">Recent Transactions</string>
+
+    <string name="bus_12a">🚌 Bus 12A</string>
+    <string name="balance_top_up">💳 Balance Top Up</string>
+    <string name="bus_5">🚌 Bus 5</string>
+
+    <string name="amount_format">£%1$s</string>
+
+
+    <!-- ==================== Bakiye Yükleme ==================== -->
+    <string name="top_up_balance">Top Up Balance</string>
+    <string name="select_amount">Select the amount you want to add.</string>
+
+    <string name="custom_amount">Custom Amount</string>
+    <string name="custom_amount_hint">e.g. 15.50</string>
+
+    <string name="invalid_amount">Please select or enter a valid amount.</string>
+
+    <string name="load_balance">Top Up</string>
+
+
+    <!-- ==================== NFC / Kart Ekle ==================== -->
+    <string name="add_card_description">Scan your transportation card with NFC or enter the card number manually.</string>
+
+    <string name="nfc_not_supported">This device does not support NFC.</string>
+    <string name="nfc_not_enabled">Please enable NFC on your phone.</string>
+    <string name="nfc_scan_instruction">Please hold your NFC card near the back of your phone.</string>
+
+    <string name="read_card_with_nfc">Read Card with NFC</string>
+
+    <string name="card_number">Card Number</string>
+
+    <string name="nfc_card_read_success">NFC card was read successfully.</string>
+
+    <string name="card_input_required">Please scan an NFC card or enter a card number.</string>
+    <string name="card_number_invalid">Card number must be 16 digits.</string>
+
+    <string name="add_card_button">Add Card</string>
+
+    <string name="select_theme">Select Theme</string>
+    <string name="select_theme_description">Choose the appearance of the app.</string>
+    <string name="system_default">System Default</string>
+    <string name="system_default_description">Uses the theme setting of your device.</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="light_theme_description">Uses the light appearance.</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="dark_theme_description">Uses the dark appearance.</string>
+
+</resources>

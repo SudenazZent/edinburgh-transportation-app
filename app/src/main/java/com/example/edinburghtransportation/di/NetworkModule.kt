@@ -14,10 +14,12 @@ import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
-import javax.inject.Singleton
+import java.util.concurrent.TimeUnit
 import javax.inject.Named
+import javax.inject.Singleton
 
 private const val BASE_URL = "https://transit.land/api/v2/rest/"
+
 class ApiKeyInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
@@ -63,6 +65,9 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .addInterceptor(ApiKeyInterceptor())
             .addInterceptor(loggingInterceptor)
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
             .build()
     }
 
@@ -78,7 +83,7 @@ object NetworkModule {
     @Singleton
     @Named("Transit")
     fun provideRetrofit(
-        @Named("Transit")  client: OkHttpClient,
+        @Named("Transit") client: OkHttpClient,
         json: Json
     ): Retrofit {
 

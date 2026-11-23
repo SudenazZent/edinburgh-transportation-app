@@ -1,3 +1,268 @@
 <resources>
-    <string name="app_name">EdinburghTransportation</string>
+
+    <string name="app_name">Edinburgh Transportation</string>
+
+    <!-- ==================== Alt Menü ==================== -->
+    <string name="home">Ana Sayfa</string>
+    <string name="routes">Hatlar</string>
+    <string name="map">Harita</string>
+    <string name="my_cards">Kartlarım</string>
+    <string name="settings">Ayarlar</string>
+
+
+    <!-- ==================== Genel ==================== -->
+    <string name="back">Geri</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="or">veya</string>
+    <string name="start">Başlangıç</string>
+    <string name="finish">Bitiş</string>
+    <string name="try_again">Tekrar Dene</string>
+
+
+    <!-- ==================== Dil ==================== -->
+    <string name="language">Dil</string>
+    <string name="app_language">Uygulama Dili</string>
+    <string name="app_language_description">Uygulamanızda kullanmak istediğiniz dili seçin.</string>
+    <string name="selected_language_description">Seçtiğiniz dil uygulama genelinde kullanılacaktır.</string>
+    <string name="turkish">Türkçe</string>
+    <string name="english">English</string>
+
+
+    <!-- ==================== Hesap ==================== -->
+    <string name="account">Hesap</string>
+    <string name="account_info">Hesap Bilgilerim</string>
+    <string name="account_info_description">Hesap bilgilerinizi görüntüleyin</string>
+
+    <string name="account_details">Hesap Bilgileri</string>
+    <string name="full_name">Ad Soyad</string>
+    <string name="email">E-posta</string>
+    <string name="name_not_found">İsim bilgisi bulunamadı</string>
+    <string name="email_not_found">E-posta bilgisi bulunamadı</string>
+
+
+    <!-- ==================== Uygulama Ayarları ==================== -->
+    <string name="app_settings">Uygulama Ayarları</string>
+    <string name="language_description">Uygulama dilini değiştir</string>
+
+    <string name="theme">Tema</string>
+    <string name="theme_description">Açık veya koyu tema seç</string>
+
+
+    <!-- ==================== Yardım ==================== -->
+    <string name="help">Yardım</string>
+    <string name="faq">Sık Sorulan Sorular</string>
+    <string name="faq_description">Uygulama hakkında sık sorulan sorular</string>
+
+    <!-- FAQ -->
+    <string name="faq_title">Sık Sorulan Sorular</string>
+
+    <string name="faq_login_question">Nasıl giriş yapabilirim?</string>
+    <string name="faq_login_answer">E-posta adresiniz ve şifreniz ile giriş yapabilirsiniz. Hesabınız yoksa kayıt olabilirsiniz.</string>
+
+    <string name="faq_add_card_question">Kartımı nasıl ekleyebilirim?</string>
+    <string name="faq_add_card_answer">Kartlarım bölümünden NFC ile kartınızı okutabilir veya kartınızı manuel olarak ekleyebilirsiniz.</string>
+
+    <string name="faq_top_up_question">Kartıma nasıl bakiye yükleyebilirim?</string>
+    <string name="faq_top_up_answer">Kartlarım bölümünden kartınızı seçerek bakiye yükleme ekranına ulaşabilirsiniz.</string>
+
+    <string name="faq_routes_question">Hatları nasıl görüntüleyebilirim?</string>
+    <string name="faq_routes_answer">Alt menüde bulunan Hatlar bölümünden otobüs ve tramvay hatlarını görüntüleyebilirsiniz.</string>
+
+    <string name="faq_stops_question">Durakları nasıl görüntüleyebilirim?</string>
+    <string name="faq_stops_answer">Harita bölümünden Edinburgh\'daki durakları görüntüleyebilir ve duraklar hakkında bilgi alabilirsiniz.</string>
+
+    <string name="faq_journey_question">Yolculuk nasıl planlanır?</string>
+    <string name="faq_journey_answer">Ana Sayfa\'daki Yolculuk Planla seçeneğinden başlangıç ve varış duraklarını seçerek uygun bir yolculuk arayabilirsiniz.</string>
+
+    <string name="faq_notifications_question">Bildirimleri nereden görebilirim?</string>
+    <string name="faq_notifications_answer">Ana Sayfa\'nın sağ üst kısmındaki bildirim simgesine dokunarak bildirimlerinizi görüntüleyebilirsiniz.</string>
+
+    <string name="faq_share_question">Uygulamayı nasıl paylaşabilirim?</string>
+    <string name="faq_share_answer">Ayarlar bölümündeki Uygulamayı Paylaş seçeneğini kullanarak uygulamayı paylaşabilirsiniz.</string>
+
+    <string name="faq_close_answer">Cevabı kapat</string>
+    <string name="faq_open_answer">Cevabı aç</string>
+
+
+    <!-- ==================== Ana Sayfa ==================== -->
+    <string name="hello">Merhaba,</string>
+    <string name="user_default">Kullanıcı</string>
+    <string name="notifications">Bildirimler</string>
+
+    <string name="all_see">Tümünü Gör</string>
+    <string name="no_cards">Henüz kartınız yok.</string>
+    <string name="add_card_instruction">Kart eklemek için Kartlarım bölümüne gidin.</string>
+
+    <string name="edinburgh">EDINBURGH</string>
+    <string name="edinburgh_transport_card">EDINBURGH TRANSPORT CARD</string>
+    <string name="current_balance">Mevcut Bakiye</string>
+
+    <string name="quick_access">Hızlı Erişim</string>
+    <string name="plan_journey">Yolculuk Planla</string>
+    <string name="stop">Duraklar</string>
+
+
+    <!-- ==================== Paylaş ==================== -->
+    <string name="share_app">Uygulamayı Paylaş</string>
+    <string name="share_app_description">Edinburgh Transportation uygulamasını paylaş</string>
+    <string name="share_app_title">Uygulamayı paylaş</string>
+    <string name="share_app_text">Edinburgh Transportation uygulamasını deneyin!</string>
+
+
+    <!-- ==================== Hatlar ==================== -->
+    <string name="route_search_hint">Hat ara (örn. 12A)</string>
+
+    <string name="all">Tümü</string>
+    <string name="bus">Otobüs</string>
+    <string name="tram">Tramvay</string>
+    <string name="other">Diğer</string>
+
+    <string name="route_detail">Hat Detayı</string>
+    <string name="route_info_loading">Hat bilgileri yükleniyor...</string>
+
+    <string name="upcoming_departures">Yaklaşan Seferler</string>
+    <string name="departures_loading">Seferler yükleniyor...</string>
+    <string name="no_upcoming_departures">Şu anda yaklaşan sefer bulunmuyor.</string>
+
+    <!-- ==================== Yolculuk Planlama ==================== -->
+    <string name="journey_planner">Yolculuk Planla</string>
+    <string name="from">Nereden?</string>
+    <string name="to">Nereye?</string>
+    <string name="starting_point">Başlangıç noktası</string>
+    <string name="destination_point">Varış noktası</string>
+    <string name="searching">Aranıyor...</string>
+    <string name="find_journey">Yolculuğu Bul</string>
+    <string name="journey_results">Yolculuk Sonuçları</string>
+    <string name="journey_searching">Yolculuk aranıyor...</string>
+    <string name="no_journey_yet">Henüz yolculuk aranmadı veya uygun bir hat bulunamadı.</string>
+    <string name="select_starting_point">Başlangıç noktası seç</string>
+    <string name="select_destination_point">Varış noktası seç</string>
+    <string name="select_options">Seçenekler</string>
+    <string name="next_departure">Sonraki sefer</string>
+    <string name="departure_info_not_found">Sefer bilgisi bulunamadı</string>
+    <string name="no_transfer">Aktarma: Yok</string>
+    <string name="transfer">Aktarma: %1$s</string>
+    <string name="route_format">Hat %1$s</string>
+    <string name="tram_format">Tramvay %1$s</string>
+
+    <!-- ==================== Duraklar ==================== -->
+    <string name="stops">Duraklar</string>
+    <string name="stops_description">Mevcut ulaşım duraklarını görüntüleyin.</string>
+    <string name="stop_id">Durak ID: %1$s</string>
+    <string name="unknown_stop">Bilinmeyen Durak</string>
+
+
+    <!-- ==================== Splash ==================== -->
+    <string name="splash_title">Edinburgh\nTransportation</string>
+    <string name="splash_description">Toplu taşımayı kolayca yönetin.</string>
+
+
+    <!-- ==================== Bildirimler ==================== -->
+    <string name="no_notifications">Henüz bildiriminiz yok.</string>
+
+
+    <!-- ==================== Giriş ==================== -->
+    <string name="login">Giriş</string>
+    <string name="welcome">Hoş Geldiniz!</string>
+    <string name="login_description">Devam etmek için giriş yapın.</string>
+
+    <string name="email_hint">E-posta adresiniz</string>
+
+    <string name="password">Şifre</string>
+    <string name="password_hint">Şifreniz</string>
+
+    <string name="forgot_password">Şifremi Unuttum?</string>
+
+    <string name="fill_all_fields">Lütfen tüm alanları doldurun</string>
+    <string name="login_success">Giriş başarılı!</string>
+    <string name="login_failed">E-posta veya şifre hatalı.</string>
+
+    <string name="login_button">Giriş Yap</string>
+
+    <string name="no_account">Hesabınız yok mu? </string>
+    <string name="register">Kayıt Ol</string>
+
+
+    <!-- ==================== Kayıt ==================== -->
+    <string name="create_account">Hesap Oluştur</string>
+    <string name="register_description">Yolculuğunuza başlamak için bir hesap oluşturun</string>
+
+    <string name="confirm_password">Şifre Tekrar</string>
+
+    <string name="passwords_do_not_match">Şifreler eşleşmiyor</string>
+    <string name="account_created">Hesabınız başarıyla oluşturuldu!</string>
+    <string name="profile_update_failed">Profil güncellenemedi</string>
+    <string name="registration_failed">Kayıt işlemi başarısız oldu</string>
+
+    <string name="already_have_account">Zaten hesabınız var mı? Giriş Yap</string>
+
+
+    <!-- ==================== Kartlar ==================== -->
+    <string name="cards_description">Tüm ulaşım kartlarınızı tek yerden yönetin.</string>
+    <string name="add_card">Kart Ekle</string>
+    <string name="no_cards_added">Henüz eklenmiş bir kartınız yok.</string>
+
+    <string name="edinburgh_transport_card_name">Edinburgh Transport Card</string>
+    <string name="edinburgh_travel_card">Edinburgh Travel Card</string>
+    <string name="edinburgh_city_pass">Edinburgh City Pass</string>
+
+    <string name="remove_from_favorites">Favorilerden çıkar</string>
+    <string name="add_to_favorites">Favorilere ekle</string>
+
+    <string name="balance">Bakiye</string>
+    <string name="favorite">★ Favori</string>
+
+
+    <!-- ==================== Kart Detayı ==================== -->
+    <string name="card_detail">Kart Detayı</string>
+    <string name="card_not_found">Kart bulunamadı</string>
+
+    <string name="edinburgh_transport_card_title">EDINBURGH\nTRANSPORT CARD</string>
+
+    <string name="recent_transactions">Son İşlemler</string>
+
+    <string name="bus_12a">🚌 Otobüs 12A</string>
+    <string name="balance_top_up">💳 Bakiye Yükleme</string>
+    <string name="bus_5">🚌 Otobüs 5</string>
+
+    <string name="amount_format">£%1$s</string>
+
+
+    <!-- ==================== Bakiye Yükleme ==================== -->
+    <string name="top_up_balance">Bakiye Yükle</string>
+    <string name="select_amount">Yüklemek istediğiniz tutarı seçin.</string>
+
+    <string name="custom_amount">Özel Tutar</string>
+    <string name="custom_amount_hint">Örn. 15.50</string>
+
+    <string name="invalid_amount">Lütfen geçerli bir tutar seçin veya girin.</string>
+
+    <string name="load_balance">Bakiyeyi Yükle</string>
+    <!-- ==================== NFC / Kart Ekle ==================== -->
+    <string name="add_card_description">Ulaşım kartınızı NFC ile okutun veya kart numarasını manuel olarak girin.</string>
+
+    <string name="nfc_not_supported">Bu cihazda NFC desteği bulunmuyor.</string>
+    <string name="nfc_not_enabled">Lütfen telefonunuzun NFC özelliğini açın.</string>
+    <string name="nfc_scan_instruction">Lütfen NFC kartınızı telefonun arkasına yaklaştırın.</string>
+
+    <string name="read_card_with_nfc">NFC ile Kart Oku</string>
+
+    <string name="card_number">Kart numarası</string>
+
+    <string name="nfc_card_read_success">NFC kartı başarıyla okundu.</string>
+
+    <string name="card_input_required">Lütfen bir NFC kartı okutun veya kart numarası girin.</string>
+    <string name="card_number_invalid">Kart numarası 16 haneli olmalıdır.</string>
+
+    <string name="add_card_button">Kartı Ekle</string>
+    <string name="select_theme">Tema Seç</string>
+    <string name="select_theme_description">Uygulamanın görünümünü seçin.</string>
+    <string name="system_default">Sistem Varsayılanı</string>
+    <string name="system_default_description">Cihazınızın tema ayarını kullanır.</string>
+    <string name="light_theme">Açık Tema</string>
+    <string name="light_theme_description">Açık renkli görünümü kullanır.</string>
+    <string name="dark_theme">Koyu Tema</string>
+    <string name="dark_theme_description">Koyu renkli görünümü kullanır.</string>
+
+
 </resources>

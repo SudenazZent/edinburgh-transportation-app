@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
@@ -13,17 +14,31 @@ import org.osmdroid.config.Configuration
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 
 @SuppressLint("MissingPermission")
 @Composable
 fun MapScreen(
+    selectedStopId: Long? = null,
     viewModel: MapViewModel = hiltViewModel()
 ) {
 
     val stops by viewModel.stops.collectAsStateWithLifecycle()
     val vehicles by viewModel.vehicles.collectAsStateWithLifecycle()
 
+    val selectedStop = stops.firstOrNull {
+        it.id == selectedStopId
+    }
+
+    var centeredStopId by remember {
+        mutableStateOf<Long?>(null)
+    }
+
     val edinburgh = GeoPoint(55.9533, -3.1883)
+
+    val unknownStop = stringResource(R.string.unknown_stop)
 
     DisposableEffect(Unit) {
         Configuration.getInstance().userAgentValue =
@@ -44,8 +59,29 @@ fun MapScreen(
 
         update = { mapView ->
 
-            mapView.overlays.removeAll { it is Marker }
+            if (
+                selectedStop != null &&
+                centeredStopId != selectedStop.id
+            ) {
 
+                val coordinates = selectedStop.geometry?.coordinates
+
+                if (coordinates != null && coordinates.size >= 2) {
+
+                    val longitude = coordinates[0]
+                    val latitude = coordinates[1]
+
+                    mapView.controller.setZoom(16.0)
+
+                    mapView.controller.setCenter(
+                        GeoPoint(latitude, longitude)
+                    )
+
+                    centeredStopId = selectedStop.id
+                }
+            }
+
+            mapView.overlays.removeAll { it is Marker }
 
             stops.forEach { stop ->
 
@@ -59,7 +95,11 @@ fun MapScreen(
                     val marker = Marker(mapView).apply {
                         position = GeoPoint(latitude, longitude)
 
-                        title = stop.stopName ?: "Unknown Stop"
+                        title = if (stop.id == selectedStopId) {
+                            "⭐ ${stop.stopName ?: unknownStop}"
+                        } else {
+                            stop.stopName ?: unknownStop
+                        }
 
                         setAnchor(
                             Marker.ANCHOR_CENTER,
@@ -68,6 +108,10 @@ fun MapScreen(
                     }
 
                     mapView.overlays.add(marker)
+
+                    if (stop.id == selectedStopId) {
+                        marker.showInfoWindow()
+                    }
                 }
             }
 

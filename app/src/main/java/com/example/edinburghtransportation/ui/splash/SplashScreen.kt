@@ -15,10 +15,12 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.edinburghtransportation.R
 import kotlinx.coroutines.delay
 
 private val SplashBackgroundColor = Color(0xFF1F4A85)
@@ -53,7 +55,7 @@ fun SplashScreen(
         )
 
         Text(
-            text = "Edinburgh\nTransportation",
+            text = stringResource(R.string.app_name),
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
@@ -62,7 +64,7 @@ fun SplashScreen(
         )
 
         Text(
-            text = "Toplu taşımayı kolayca yönetin.",
+            text = stringResource(R.string.splash_description),
             fontSize = 16.sp,
             color = Color.White,
             textAlign = TextAlign.Center
@@ -73,19 +75,25 @@ fun SplashScreen(
                 .fillMaxWidth()
                 .height(6.dp)
                 .padding(top = 16.dp)
-                .background(ProgressTrackColor, RoundedCornerShape(10.dp))
+                .background(
+                    ProgressTrackColor,
+                    RoundedCornerShape(10.dp)
+                )
         ) {
 
             Box(
                 modifier = Modifier
                     .fillMaxWidth(0.5f)
                     .height(6.dp)
-                    .background(ProgressFillColor, RoundedCornerShape(10.dp))
+                    .background(
+                        ProgressFillColor,
+                        RoundedCornerShape(10.dp)
+                    )
             )
         }
 
         Text(
-            text = "Yükleniyor...",
+            text = stringResource(R.string.loading),
             fontSize = 15.sp,
             fontWeight = FontWeight.Medium,
             color = Color.White

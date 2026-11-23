@@ -1,6 +1,7 @@
 package com.example.edinburghtransportation.ui.login
 
 import android.widget.Toast
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,8 +21,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import com.example.edinburghtransportation.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 
@@ -49,16 +53,34 @@ fun RegisterScreen(
     val auth = FirebaseAuth.getInstance()
     val context = LocalContext.current
 
+    // stringResource() çağrıları Composable alanında yapılır.
+    // Daha sonra bu hazır String değerlerini callback'lerde kullanabiliriz.
+    val fillAllFieldsText =
+        stringResource(R.string.fill_all_fields)
+
+    val passwordsDoNotMatchText =
+        stringResource(R.string.passwords_do_not_match)
+
+    val accountCreatedText =
+        stringResource(R.string.account_created)
+
+    val profileUpdateFailedText =
+        stringResource(R.string.profile_update_failed)
+
+    val registrationFailedText =
+        stringResource(R.string.registration_failed)
+
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background)
             .padding(24.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
         Text(
-            text = "Hesap Oluştur"
+            text = stringResource(R.string.create_account)
         )
 
         Spacer(
@@ -66,7 +88,7 @@ fun RegisterScreen(
         )
 
         Text(
-            text = "Yolculuğunuza başlamak için bir hesap oluşturun"
+            text = stringResource(R.string.register_description)
         )
 
         Spacer(
@@ -79,7 +101,9 @@ fun RegisterScreen(
                 name = it
             },
             label = {
-                Text("Ad Soyad")
+                Text(
+                    text = stringResource(R.string.full_name)
+                )
             },
             modifier = Modifier.fillMaxWidth()
         )
@@ -94,7 +118,9 @@ fun RegisterScreen(
                 email = it
             },
             label = {
-                Text("E-posta")
+                Text(
+                    text = stringResource(R.string.email)
+                )
             },
             modifier = Modifier.fillMaxWidth()
         )
@@ -109,7 +135,9 @@ fun RegisterScreen(
                 password = it
             },
             label = {
-                Text("Şifre")
+                Text(
+                    text = stringResource(R.string.password)
+                )
             },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth()
@@ -125,7 +153,9 @@ fun RegisterScreen(
                 confirmPassword = it
             },
             label = {
-                Text("Şifre Tekrar")
+                Text(
+                    text = stringResource(R.string.confirm_password)
+                )
             },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth()
@@ -147,7 +177,7 @@ fun RegisterScreen(
 
                     Toast.makeText(
                         context,
-                        "Lütfen tüm alanları doldurun",
+                        fillAllFieldsText,
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -155,7 +185,7 @@ fun RegisterScreen(
 
                     Toast.makeText(
                         context,
-                        "Şifreler eşleşmiyor",
+                        passwordsDoNotMatchText,
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -181,7 +211,7 @@ fun RegisterScreen(
 
                                         Toast.makeText(
                                             context,
-                                            "Hesabınız başarıyla oluşturuldu!",
+                                            accountCreatedText,
                                             Toast.LENGTH_SHORT
                                         ).show()
 
@@ -192,7 +222,7 @@ fun RegisterScreen(
 
                                         Toast.makeText(
                                             context,
-                                            "Profil güncellenemedi",
+                                            profileUpdateFailedText,
                                             Toast.LENGTH_SHORT
                                         ).show()
                                     }
@@ -202,7 +232,7 @@ fun RegisterScreen(
 
                             Toast.makeText(
                                 context,
-                                "Kayıt işlemi başarısız oldu",
+                                registrationFailedText,
                                 Toast.LENGTH_LONG
                             ).show()
                         }
@@ -211,7 +241,9 @@ fun RegisterScreen(
             },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Kayıt Ol")
+            Text(
+                text = stringResource(R.string.register)
+            )
         }
 
         Spacer(
@@ -221,7 +253,9 @@ fun RegisterScreen(
         Button(
             onClick = onLoginClick
         ) {
-            Text("Zaten hesabınız var mı? Giriş Yap")
+            Text(
+                text = stringResource(R.string.already_have_account)
+            )
         }
     }
 }
